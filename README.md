@@ -32,4 +32,6 @@
 
 ---
 
-![ShopEase Demo](https://your-cdn.com/path/to/demo.gif)
+### Shop Demo Link : 
+[ShopEase Demo](https://stocksavy.vercel.app/)
+
