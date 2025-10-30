@@ -1,11 +1,11 @@
-# 👋 ShopEase
+# 👋 ShopSavy
 
 > **Smart, simple shop management — all your stock, orders, and prices in one place.**
 
 ---
 
 ### 📝 Description
-**ShopEase** is a lightweight web app for shop owners to manage **products, orders, and inventory** quickly — no notebooks, just a clean dashboard.
+**ShopSavy** is a lightweight web app for shop owners to manage **products, orders, and inventory** quickly — no notebooks, just a clean dashboard.
 
 ---
 
@@ -33,5 +33,5 @@
 ---
 
 ### Shop Demo Link : 
-[ShopEase Demo](https://stocksavy.vercel.app/)
+[ShopSavy Demo](https://stocksavy.vercel.app/)
 
