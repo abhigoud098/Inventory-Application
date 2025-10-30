@@ -32,11 +32,4 @@
 
 ---
 
-### 🖼️ How to add your GIF / logo
-Put your images in an `assets/` folder or use an external URL:
-
-```md
-![ShopEase Logo](assets/logo.png)
-![ShopEase Demo](assets/demo.gif)
-
 ![ShopEase Demo](https://your-cdn.com/path/to/demo.gif)
