@@ -1,0 +1,116 @@
+.nav {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  padding-top: 10px;
+  padding-left: 0;
+  padding-right: 0;
+  gap: 10px;
+  box-sizing: border-box;
+  height: 58px;
+  flex-shrink: 0;
+}
+
+.login {
+  width: 310px;
+  flex-shrink: 0;
+  padding: 5px;
+  background-color: #ffffff;
+  border-radius: 0 10px 10px 0;
+  text-align: center;
+}
+
+.login * {
+  text-decoration: none;
+  color: #799EFF;
+}
+
+.search {
+  flex: 1 1 0;
+  padding: 5px;
+  background-color: #ffffff;
+  border-radius: 10px 0 0 10px;
+  color: #799EFF;
+  border: none;
+  font-size: 31px;
+}
+
+.search:focus {
+  outline: none;
+}
+
+.resultsContainer {
+  width: 50%;
+  position: absolute;
+  top: 58px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 5px;
+}
+
+/* Use grid so columns align perfectly under headers */
+.resultsHeader,
+.resultItem {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 90px 90px;
+  align-items: center;
+  padding: 5px 10px;
+  gap: 10px;
+  box-sizing: border-box;
+}
+
+.resultsHeader {
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+  color: #799EFF;
+}
+
+/* Column alignment and overflow handling */
+.resultsHeader .name,
+.resultItem .name {
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.resultsHeader .stock,
+.resultItem .stock {
+  text-align: center;
+}
+
+.resultsHeader .price,
+.resultItem .price {
+  text-align: right;
+}
+
+/* hover and pointer for items */
+.resultItem:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+/* ensure responsive behavior on small screens */
+@media (max-width: 640px) {
+  .resultsContainer {
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .resultsHeader,
+  .resultItem {
+    grid-template-columns: 1fr 70px 70px;
+    font-size: 14px;
+  }
+}

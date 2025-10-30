@@ -1,0 +1,273 @@
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  background-color: #fff;
+  border-radius: 10px 10px 0 0;
+  margin-top: 10px;
+  gap: 20px;
+}
+
+/* dashboard */
+
+.mainContainer {
+  gap: 20px;
+  display: flex;
+  width: 90%;
+  align-items: stretch;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0px 25px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cardIcon {
+  font-size: 28px;
+}
+
+.cardTitle {
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+}
+
+.cardValue {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.recentOrderAndLowItems {
+  width: 90%;
+  height: 60%;
+  display: flex;
+  gap: 5%;
+}
+
+.recentOrder {
+  height: 100%;
+  width: 47.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0px 25px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.recentOrder h1 {
+  font-size: 1.3rem;
+  background-color: #799eff;
+  color: white;
+  border-radius: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.button {
+  font-weight: bold;
+  color: white;
+  border-radius: 2rem;
+  cursor: pointer;
+  width: 65px;
+  height: 42px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.3) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button .spanmother {
+  display: flex;
+  overflow: hidden;
+}
+
+.button:hover .spanmother {
+  position: absolute;
+}
+
+.button:hover .spanmother span {
+  transform: translateY(1.2em);
+}
+
+.button .spanmother span:nth-child(1) {
+  transition: 0.2s;
+}
+
+.button .spanmother span:nth-child(2) {
+  transition: 0.3s;
+}
+
+.button .spanmother span:nth-child(3) {
+  transition: 0.4s;
+}
+
+.button .spanmother span:nth-child(4) {
+  transition: 0.5s;
+}
+
+.button .spanmother span:nth-child(5) {
+  transition: 0.6s;
+}
+
+.button .spanmother span:nth-child(6) {
+  transition: 0.7s;
+}
+
+.button .spanmother2 {
+  display: flex;
+  position: absolute;
+  overflow: hidden;
+}
+
+.button .spanmother2 span {
+  transform: translateY(-1.2em);
+}
+
+.button:hover .spanmother2 span {
+  transform: translateY(0);
+}
+
+.button .spanmother2 span {
+  transition: 0.2s;
+}
+
+.button .spanmother2 span:nth-child(2) {
+  transition: 0.3s;
+}
+
+.button .spanmother2 span:nth-child(3) {
+  transition: 0.4s;
+}
+
+.button .spanmother2 span:nth-child(4) {
+  transition: 0.5s;
+}
+
+.button .spanmother2 span:nth-child(5) {
+  transition: 0.6s;
+}
+
+.button .spanmother2 span:nth-child(6) {
+  transition: 0.7s;
+}
+
+.lowItems {
+  height: 100%;
+  width: 47.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0px 25px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.lowItems h1 {
+  font-size: 1.3rem;
+  background-color: #799eff;
+  color: white;
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+.recentOrder button {
+  background-color: green;
+  border: none;
+  border-radius: 10px;
+  padding: 7px;
+  transition: transform 0.5s ease;
+}
+
+.recentOrder button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.recentOrder button i {
+  color: white;
+  font-size: 13px;
+}
+
+.ordersOfClient {
+  width: 100%;
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+.ordersOfClient::-webkit-scrollbar {
+  display: none;
+}
+
+.ordersOfClient table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.ordersOfClient table th,
+.ordersOfClient table td {
+  padding: 8px;
+  text-align: center;
+}
+
+.ordersOfClient table td {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.ordersOfClient table thead {
+  background-color: #799eff;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+
+.ordersOfClient table thead th {
+  border-radius: 5px;
+}
+
+.statusOfOrder {
+  cursor: pointer;
+}
+
+.statusOfOrder svg {
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.statusOfOrder svg:hover{
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.specialTD {
+  display: flex;
+  flex-direction: column;
+}
+
+.specialTD span svg {
+  height: 20px;
+}

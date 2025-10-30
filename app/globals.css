@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #799eff;
+}
+
+main {
+  display: flex;
+  height: calc(100vh - 58px);
+  gap: 10px;
+}

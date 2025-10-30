@@ -1,0 +1,146 @@
+.content {
+  z-index: 10;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  height: calc(100% - 68px);
+  width: calc(100% - 320px);
+  bottom: 0;
+  right: 0;
+  background-color: white;
+  border-radius: 10px 0 0 0;
+}
+
+.content img {
+  height: calc(100% - 68px);
+}
+
+.form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transform: rotateX(-10deg);
+  transition: all 0.3s ease-in-out;
+  z-index: 20;
+}
+
+.form textarea {
+  flex: 1;
+  width: 100%;
+  min-height: 300px;
+  background-color: #799eff;
+  border: none;
+  color: #fff;
+  box-shadow: 0 0 20px rgb(0, 0, 0, 0.3);
+  resize: none;
+  font-size: large;
+}
+
+.form textarea::placeholder {
+  color: #ffffff;
+  font-size: large;
+}
+
+.form h1 {
+  text-align: center;
+  color: #799eff;
+  margin-bottom: 20px;
+}
+
+.form button {
+  width: fit-content;
+  margin: auto;
+}
+
+@keyframes form-animation {
+  from {
+    transform: rotateX(-30deg);
+    opacity: 0;
+  }
+
+  to {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+}
+
+.input {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: transparent;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out,
+    transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  color: rgb(255, 255, 255);
+}
+
+.input::placeholder {
+  color: #fff;
+}
+
+.input:hover,
+.input:focus {
+  transform: translateY(-5px);
+  outline: none;
+}
+
+.status {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: transparent;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out,
+    transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  color: rgb(255, 255, 255);
+}
+
+.status::placeholder {
+  color: #fff;
+}
+
+.status:hover,
+.status:focus {
+  transform: translateY(-5px);
+  outline: none;
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #799eff !important;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  transform: rotateX(-10deg);
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #799eff;
+  font-size: 17px;
+  border-radius: 10px;
+}
+
+.h1 {
+  font-size: 15px;
+}
+
+.span {
+  color: black;
+  text-decoration: underline;
+}

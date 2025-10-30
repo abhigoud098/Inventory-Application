@@ -1,0 +1,99 @@
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  background-color: #fff;
+  border-radius: 10px 10px 0 0;
+  margin-top: 10px;
+  gap: 20px;
+}
+
+.content h1 {
+  color: #799EFF;
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 40px;
+  font-size: 1.1em;
+  width: 700px;
+line-height: 1.6;
+}
+
+.guideCard {
+  background: #f8f9ff;
+  border-left: 5px solid #799EFF;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: auto;
+  width: 100%;
+}
+
+.guideCard:hover {
+  transform: translateX(10px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
+}
+
+.guideCard h2 {
+  color: #799EFF;
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  background: #799EFF;
+  color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.guideCard p {
+  color: #555;
+  line-height: 1.8;
+  font-size: 1.05em;
+}
+
+.tipBox {
+  background: #fff3cd;
+  border-left: 5px solid #ffc107;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.tipBox h3 {
+  color: #856404;
+  margin-bottom: 10px;
+  font-size: 1.3em;
+}
+
+.tipBox p {
+  color: #856404;
+  line-height: 1.6;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 2px solid #eee;
+  color: #999;
+}
