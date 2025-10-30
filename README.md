@@ -1,9 +1,5 @@
 # 👋 ShopEase
 
-![ShopEase Logo](assets/logo.png)
-
-![ShopEase Demo](assets/demo.gif)
-
 > **Smart, simple shop management — all your stock, orders, and prices in one place.**
 
 ---
